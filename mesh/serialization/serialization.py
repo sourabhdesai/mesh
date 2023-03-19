@@ -211,7 +211,7 @@ def write_mtl(self, path, material_name, texture_name):
 
 
 def write_ply(self, filename, flip_faces=False, ascii=False, little_endian=True, comments=[]):
-    from psbody.mesh.serialization import plyutils
+    from mesh.serialization import plyutils
 
     if os.path.dirname(filename) and not os.path.exists(os.path.dirname(filename)):
         os.makedirs(os.path.dirname(filename))
@@ -428,7 +428,7 @@ def load_from_ply(self, filename):
 
     test_data_folder = abspath(join(dirname(__file__), '..', 'data', 'unittest'))
 
-    from psbody.mesh.serialization import plyutils
+    from mesh.serialization import plyutils
     try:
         res = plyutils.read(filename)
     except plyutils.error as e:
