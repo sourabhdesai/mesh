@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "mesh"
+version = "0.1.0"
+description = ""
+authors = ["Sourabh Desai <sourabhdesai@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+setuptools = "^67.6.0"
+numpy = "^1.24.2"
+matplotlib = "^3.7.1"
+scipy = "^1.10.1"
+pyopengl = "^3.1.6"
+pillow = "^9.4.0"
+pyzmq = "^25.0.1"
+pyyaml = "^6.0"
+opencv-python = "^4.7.0.72"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
